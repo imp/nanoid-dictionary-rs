@@ -1,10 +1,10 @@
 [package]
 name = "nanoid-dictionary"
 version = "0.4.1"
-edition = "2018"
+edition = "2021"
 repository = "https://gitlab.com/imp/nanoid-dictionary-rs"
 license = "MIT"
-description = "Set of dictionaries for nanoid"
+description = "Popular alphabets for use with nanoid"
 
 [dev-dependencies]
 nanoid = "0.4"
