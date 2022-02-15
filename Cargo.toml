@@ -6,4 +6,5 @@ repository = "https://gitlab.com/imp/nanoid-dictionary-rs"
 license = "MIT"
 description = "Set of dictionaries for nanoid"
 
-[dependencies]
+[dev-dependencies]
+nanoid = "0.4"
