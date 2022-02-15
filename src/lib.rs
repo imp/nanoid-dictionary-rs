@@ -49,6 +49,14 @@ pub const NOLOOKALIKES: &[char] = &[
     'k', 'm', 'n', 'p', 'q', 'r', 't', 'w', 'x', 'y', 'z',
 ];
 
+/// Same as noolookalikes but with removed vowels and following letters: 3, 4, x, X, V.
+/// This list should protect you from accidentally getting obscene words in generated strings.
+/// Complete set: 6789BCDFGHJKLMNPQRTWbcdfghjkmnpqrtwz
+pub const NOLOOKALIKES_SAFE: &[char] = &[
+    '6', '7', '8', '9', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'T',
+    'W', 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'm', 'n', 'p', 'q', 'r', 't', 'w', 'z',
+];
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -76,5 +84,10 @@ mod tests {
     #[test]
     fn nolookalikes_length() {
         assert_eq!(NOLOOKALIKES.len(), 49);
+    }
+
+    #[test]
+    fn nolookalikes_safe_length() {
+        assert_eq!(NOLOOKALIKES_SAFE.len(), 36);
     }
 }
