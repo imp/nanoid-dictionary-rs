@@ -1,6 +1,6 @@
 [package]
 name = "nanoid-dictionary"
-version = "0.4.2"
+version = "0.4.3"
 edition = "2021"
 repository = "https://gitlab.com/imp/nanoid-dictionary-rs"
 license = "MIT"
