@@ -61,6 +61,22 @@ pub const ALPHANUMERIC: &[char] = &[
     'V', 'W', 'X', 'Y', 'Z',
 ];
 
+/// Combination of all the lowercase characters and numbers from 0 to 9
+/// Does not include any symbols or special characters
+///
+pub const ALPHANUMERIC_LOWERCASE: &[char] = &[
+    '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+    'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+];
+
+/// Combination of all the uppercase characters and numbers from 0 to 9
+/// Does not include any symbols or special characters
+///
+pub const ALPHANUMERIC_UPPERCASE: &[char] = &[
+    '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
+    'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+];
+
 /// Numbers and english alphabet without lookalikes: 1, l, I, 0, O, o, u, v, 5, S, s, 2, Z.
 /// Complete set: 346789ABCDEFGHJKLMNPQRTUVWXYabcdefghijkmnpqrtwxyz
 ///
@@ -101,6 +117,16 @@ mod tests {
     #[test]
     fn alphanumeric_length() {
         assert_eq!(ALPHANUMERIC.len(), 62);
+    }
+
+    #[test]
+    fn alphanumeric_lowercase_length() {
+        assert_eq!(ALPHANUMERIC_LOWERCASE.len(), 36);
+    }
+
+    #[test]
+    fn alphanumeric_uppercase_length() {
+        assert_eq!(ALPHANUMERIC_UPPERCASE.len(), 36);
     }
 
     #[test]
